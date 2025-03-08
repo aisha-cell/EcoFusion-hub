@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFusion Hub - Login/Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #6dbf69, #a2e1a0);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.5s ease-in-out;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            color: #666;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+            margin-top: 0;
+            font-weight: 500;
+        }
+
+        select,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 10px;
+            transition: border-color 0.3s;
+        }
+
+        select:focus,
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus {
+            border-color: #28a745;
+            outline: none;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+        }
+
+        label {
+            font-weight: 500;
+            color: #495057;
+            display: block;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #007bff;
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>EcoFusion Hub</h1>
+        <button onclick="openModal()" class="btn-primary">Login/Sign Up</button>
+    </header>
+
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Select Your Role</h2>
+            <select id="userType" onchange="showSignUpForm()">
+                <option value="">-- Select Your Role --</option>
+                <option value="farmer">Farmer</option>
+                <option value="customer">Customer</option>
+                <option value="manufacturer">Manufacturer</option>
+                <option value="innovator">Innovator</option>
+            </select>
+            <div id="formContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('formContainer').innerHTML = '';
+        }
+
+        function showSignUpForm() {
+            const userType = document.getElementById('userType').value;
+            let formHtml = '';
+
+            if (userType) {
+                formHtml += `
+                    <h3>${capitalize(userType)} Sign Up</h3>
+                    <form id="signUpForm">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        ${additionalFields(userType)}
+                        <button type="submit" class="btn-primary" onclick="showLoginForm(event)">Sign Up</button>
+                    </form>
+                `;
+            }
+
+            document.getElementById('formContainer').innerHTML = formHtml;
+        }
+
+        function additionalFields(userType) {
+            if (userType === 'farmer') {
+                return `
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    <label for="farm-size">Farm Size (in acres):</label>
+                    <input type="number" id="farm-size" name="farm-size">
+                    <label for="crop-type">Type of Crops:</label>
+                    <input type="text" id="crop-type" name="crop-type">
+                `;
+            } else if (userType === 'manufacturer') {
+                return `
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company-name">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    <label for="license">License Number:</label>
+                    <input type="text" id="license" name="license">
+                `;
+            } else if (userType === 'innovator') {
+                return `
+                    <label for="focus-area">Focus Area:</label>
+                    <input type="text" id="focus-area" name="focus-area">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    <label for="partners">Current Partners:</label>
+                    <input type="text" id="partners" name="partners">
+                `;
+            } else {
+                return '';
+            }
+        }
+
+        function showLoginForm(event) {
+            event.preventDefault();
+            const formHtml = `
+            <h3>Login</h3>
+            <form id="loginForm" onsubmit="submitForm(event, 'index.html')">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <a href="#" onclick="showForgotPassword()">Forgot Password?</a>
+        `;
+            document.getElementById('formContainer').innerHTML = formHtml;
+        }
+
+        function submitForm(event, redirectUrl) {
+            event.preventDefault();
+            alert("You have logged in successfully!");
+            // Simulate redirection to the homepage after successful login/signup
+            window.location.href = redirectUrl;
+        }
+
+        function showForgotPassword() {
+            const formHtml = `
+            <h3>Forgot Password</h3>
+            <form id="forgotPasswordForm" onsubmit="submitForm(event, 'home.html')">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" class="btn-primary">Reset Password</button>
+            </form>
+        `;
+            document.getElementById('formContainer').innerHTML = formHtml;
+        }
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+    </script>
+</body>
+
+</html>

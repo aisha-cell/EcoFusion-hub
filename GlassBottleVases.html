@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycled Glass Items</title>
+    <!-- Font for headings  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font for Paragraphs  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="z1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div id="title-container">
+                <div id="logo">
+                    <img src="logo1.png " alt="LOGO">
+                </div>
+                <div id="head">
+                    <h1 id="title">EcoFusion Hub</h1>
+                    <p class="center">Innovating solutions for Greener Future</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="about us.html">About us</a></li>
+                    <li class="item"><a href="services.html">Services</a></li>
+                    <li class="item"><a href="products.html">Products</a></li>
+                    <li class="item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="item"><a href="contact us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Category Navigation Bar -->
+    <nav class="navbar1">
+        <div class="nav-left">
+            <ul class="category-list">
+                <li class="dropdown">
+                    <a href="#recycled"> Agriculture Waste based Products</a>
+                    <div class="dropdown-content">
+                        <a href="Plantbasedpackaging.html">Plant based packaging</a>
+                        <hr>
+                        <a href="Biodegradable-Tableware.html">Biodegradable Tableware</a>
+                        <hr>
+                        <a href="Agricultural-Fiber-Textiles.html">Agricultural Fiber Textiles</a>
+                        <hr>
+                        <a href="Natural-Fiber-Handicrafts.html">Natural Fiber Handicrafts</a>
+                        <hr>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#biodegradable">CityScape Waste based Products</a>
+                    <div class="dropdown-content">
+                        <a href="UpcyclePalsticCrafts.html">Upcycle Palstic Crafts</a>
+                        <hr>
+                        <a href="GlassBottleVases.html">Upcycled Glass Items</a>
+                        <hr>
+                        <a href="MetalArtSculptures .html">Metal Art Sculptures </a>
+                        <hr>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <input type="text" placeholder="Search products..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <div class="icon-wrapper">
+                <i class="fas fa-heart wishlist-icon"></i>
+                <span class="wishlist-count">0</span>
+            </div>
+            <div class="icon-wrapper">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h3>Upcycled Glass Items</h3>
+    </div>
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <div class="product-card"
+            onclick="showProductDetails('Bird made with glass pieces','./Glass Bottle Vases/Bird made with glass pieces.webp','Beautiful handmade glass bird sculpture, crafted from recycled glass pieces.', 150)">
+            <img src="./Glass Bottle Vases/Bird made with glass pieces.webp" alt="Bird made with glass pieces">
+            <h3>Bird made with glass pieces</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Bird made with glass pieces')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Bird made with glass pieces')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Bottle furniture','./Glass Bottle Vases/Bottle furniture.jpg','Innovative furniture piece made from repurposed glass bottles.', 100)">
+            <img src="./Glass Bottle Vases/Bottle furniture.jpg" alt="Bottle furniture">
+            <h3>Bottle furniture</h3>
+            <p class="price">&#8377;100 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Bottle furniture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Bottle furniture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Custom glass art of tree','./Glass Bottle Vases/Custom glass art of tree.webp','Stunning custom glass artwork depicting a tree.', 450)">
+            <img src="./Glass Bottle Vases/Custom glass art of tree.webp" alt="Custom glass art of tree">
+            <h3>Custom glass art of tree</h3>
+            <p class="price">&#8377;450 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Custom glass art of tree')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Custom glass art of tree')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Ellam-Recycled-Glass-Bottle-Vase','./Glass Bottle Vases/Ellam-Recycled-Glass-Bottle-Vase.jpg','Elegant recycled glass bottle vase with unique design.', 250)">
+            <img src="./Glass Bottle Vases/Ellam-Recycled-Glass-Bottle-Vase.jpg" alt="Ellam-Recycled-Glass-Bottle-Vase">
+            <h3>Ellam-Recycled-Glass-Bottle-Vase</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Ellam-Recycled-Glass-Bottle-Vase')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Ellam-Recycled-Glass-Bottle-Vase')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Hand-painted-glass-bottle-vases-colourful-design','./Glass Bottle Vases/Hand-painted-glass-bottle-vases-colourful-design.jpg','Vibrant hand-painted glass bottle vase with a colorful design.', 150)">
+            <img src="./Glass Bottle Vases/Hand-painted-glass-bottle-vases-colourful-design.jpg"
+                alt="Hand-painted-glass-bottle-vases-colourful-design">
+            <h3>Hand-painted-glass-bottle-vases-colourful-design</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn"
+                    onclick="addToWishlist(event, 'Hand-painted-glass-bottle-vases-colourful-design')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn"
+                    onclick="addToCart(event, 'Hand-painted-glass-bottle-vases-colourful-design')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('reborn-night-lights-miscellaneous','./Glass Bottle Vases/reborn-night-lights-miscellaneous.webp','Reborn night light made from recycled materials.', 350)">
+            <img src="./Glass Bottle Vases/reborn-night-lights-miscellaneous.webp"
+                alt="reborn-night-lights-miscellaneous">
+            <h3>reborn-night-lights-miscellaneous</h3>
+            <p class="price">&#8377;350 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'reborn-night-lights-miscellaneous')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'reborn-night-lights-miscellaneous')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Recycled Glass Art','./Glass Bottle Vases/Recycled Glass Art.jpg','Intricate artwork crafted from recycled glass.', 150)">
+            <img src="./Glass Bottle Vases/Recycled Glass Art.jpg" alt="Recycled Glass Art">
+            <h3>Recycled Glass Art</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Recycled Glass Art')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Recycled Glass Art')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Recycled glass Sculpture','./Glass Bottle Vases/Recycled glass Sclupture.jpeg','Elegant sculpture crafted from recycled glass.', 250)">
+            <img src="./Glass Bottle Vases/Recycled glass Sclupture.jpeg" alt="Recycled glass Sculpture">
+            <h3>Recycled glass Sculpture</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Recycled glass Sculpture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Recycled glass Sculpture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('translucent Green tint','./Glass Bottle Vases/translucent Green tint.jpg','Simple yet elegant bottle with a translucent green tint.', 150)">
+            <img src="./Glass Bottle Vases/translucent Green tint.jpg" alt="translucent Green tint">
+            <h3>translucent Green tint</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'translucent Green tint')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'translucent Green tint')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('unique lamp made from glass pieces','./Glass Bottle Vases/unique lamp made from glass pieces.webp','Distinctive lamp created from recycled glass pieces.', 300)">
+            <img src="./Glass Bottle Vases/unique lamp made from glass pieces.webp"
+                alt="unique lamp made from glass pieces">
+            <h3>unique lamp made from glass pieces</h3>
+            <p class="price">&#8377;300 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'unique lamp made from glass pieces')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'unique lamp made from glass pieces')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modal-product-img" src="" alt="Product Image">
+            <h2 id="modal-product-name"></h2>
+            <p id="modal-product-description"></p>
+            <p id="modal-product-price" class="price"></p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event)"><i class="fas fa-heart"></i>
+                    Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event)"><i class="fas fa-shopping-cart"></i> Add to
+                    Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buy Now Modal -->
+    <div id="buy-now-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBuyNowModal()">&times;</span>
+            <div id="step1" class="buy-now-step">
+                <h2>Enter Delivery Address</h2>
+                <input type="text" id="address" placeholder="Street" required>
+                <input type="text" id="h.no" placeholder="House.No" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="postal-code" placeholder="Postal Code" required>
+                <button onclick="goToStep(2)">Next</button>
+            </div>
+            <div id="step2" class="buy-now-step" style="display: none;">
+                <h2>Select Payment Method</h2>
+                <input type="radio" id="credit-card" name="payment" value="Credit Card" required>
+                <label for="credit-card">Credit Card</label><br>
+                <input type="radio" id="paypal" name="payment" value="PayPal">
+                <label for="paypal">PayPal</label><br>
+                <input type="radio" id="cash-on-delivery" name="payment" value="Cash on Delivery">
+                <label for="cash-on-delivery">Cash on Delivery</label><br>
+                <button onclick="goToStep(1)">Back</button>
+                <button onclick="goToStep(3)">Next</button>
+            </div>
+            <div id="step3" class="buy-now-step" style="display: none;">
+                <h2>Confirm Order</h2>
+                <div class="order-details">
+                    <p><span class="detail-label">Delivery Address:</span><span class="detail-value"
+                            id="order-address"></span></p>
+                    <p><span class="detail-label">Payment Method:</span><span class="detail-value"
+                            id="order-payment"></span></p>
+                    <p><span class="detail-label">Product:</span><span class="detail-value" id="order-product"></span>
+                    </p>
+                </div>
+                <div class="confirmation-buttons">
+                    <button class="back-btn" onclick="goToStep(2)">Back</button>
+                    <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info and Address -->
+            <div class="footer-section company-info">
+                <h3>EcoFusion Hub</h3>
+                <p>Innovating solutions for a greener future. We transform agricultural and cityscape waste into
+                    valuable products.</p>
+                <p>Address: 25-678 Noonepali Nandyal AndhraPradesh</p>
+                <p>Email: contact@ecofusionhub.com</p>
+                <p>Phone: 8520025329</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/EcoFusionHub" target="_blank"><i class="fab fa-twitter"></i>
+                            Twitter</a></li>
+                    <li><a href="https://www.instagram.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/EcoFusionHub" target="_blank"><i
+                                class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/EcoFusionHub" target="_blank"><i class="fab fa-youtube"></i>
+                            YouTube</a></li>
+                </ul>
+            </div>
+
+            <!-- Latest News & Updates -->
+            <div class="footer-section latest-news">
+                <h3>Latest News & Updates</h3>
+                <ul>
+                    <li>
+                        <a href="news-article-1.html">EcoFusion Hub Launches New Product Line Using 100% Recycled
+                            Materials</a>
+                        <span>November 15, 2024</span>
+                    </li>
+                    <li>
+                        <a href="news-article-2.html">Join Our Upcoming Webinar on Sustainable Practices in Urban
+                            Development</a>
+                        <span>November 25, 2024</span>
+                    </li>
+                    <li>
+                        <a href="news-article-3.html">EcoFusion Hub Partners with Local Farmers for Zero Waste
+                            Initiative</a>
+                        <span>December 2, 2024</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoFusion Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToWishlist(event, productName) {
+            event.stopPropagation();
+            const wishlistCount = document.querySelector('.wishlist-count');
+            wishlistCount.textContent = parseInt(wishlistCount.textContent) + 1;
+            alert(`${productName} added to wishlist!`);
+        }
+
+        function addToCart(event, productName) {
+            event.stopPropagation();
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            alert(`${productName} added to cart!`);
+        }
+
+        // Function to display product details in the modal
+        function showProductDetails(name, img, description, price) {
+            document.getElementById("modal-product-name").textContent = name;
+            document.getElementById("modal-product-img").src = img;
+            document.getElementById("modal-product-description").textContent = description;
+            document.getElementById("modal-product-price").textContent = `Price: ₹${price}`;
+            document.getElementById("product-modal").style.display = "block";
+        }
+
+        // Close modal function
+        function closeModal() {
+            document.getElementById("product-modal").style.display = "none";
+        }
+
+        // Adding items to the cart
+        function addToCart(event) {
+            event.stopPropagation();
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            alert("Product added to cart!");
+            closeModal();
+        }
+
+        // Adding items to the wishlist
+        function addToWishlist(event) {
+            event.stopPropagation();
+            const wishlistCount = document.querySelector('.wishlist-count');
+            wishlistCount.textContent = parseInt(wishlistCount.textContent) + 1;
+            alert("Product added to wishlist!");
+        }
+
+        // Open Buy Now Modal
+        function openBuyNowModal() {
+            document.getElementById("buy-now-modal").style.display = "block";
+            goToStep(1); // Start from step 1
+        }
+
+        // Close Buy Now Modal
+        function closeBuyNowModal() {
+            document.getElementById("buy-now-modal").style.display = "none";
+        }
+
+        // Go to Specific Step in the Modal
+        function goToStep(step) {
+            document.querySelectorAll('.buy-now-step').forEach((element, index) => {
+                element.style.display = (index === step - 1) ? 'block' : 'none';
+            });
+        }
+
+        // Capture Address, Payment, and Product Information
+        function getOrderDetails() {
+            const address = document.getElementById("address").value + ", " + document.getElementById("city").value + ", " + document.getElementById("postal-code").value;
+            const payment = document.querySelector('input[name="payment"]:checked') ? document.querySelector('input[name="payment"]:checked').value : 'Not Selected';
+            const product = "Biodegradable Plates"; // Hardcoded for now, but this can be dynamically assigned based on selected product
+
+            // Display Order Details in Confirmation Step
+            document.getElementById("order-address").textContent = address;
+            document.getElementById("order-payment").textContent = payment;
+            document.getElementById("order-product").textContent = product;
+        }
+
+        // Confirm Order and Show Order Confirmation Message
+        function confirmOrder() {
+            getOrderDetails();
+            alert("Your order has been confirmed! Thank you for shopping with EcoFusion Hub.");
+            closeBuyNowModal();
+        }
+
+        // Close modal if clicked outside content
+        window.onclick = function (event) {
+            const modal = document.getElementById("product-modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

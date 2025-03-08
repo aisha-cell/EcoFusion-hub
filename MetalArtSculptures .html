@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="z1.css">
+    <!-- Font for headings  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font for Paragraphs  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div id="title-container">
+                <div id="logo">
+                    <img src="logo1.png " alt="LOGO">
+                </div>
+                <div id="head">
+                    <h1 id="title">EcoFusion Hub</h1>
+                    <p class="center">Innovating solutions for Greener Future</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="about us.html">About us</a></li>
+                    <li class="item"><a href="services.html">Services</a></li>
+                    <li class="item"><a href="products.html">Products</a></li>
+                    <li class="item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="item"><a href="contact us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Category Navigation Bar -->
+    <nav class="navbar1">
+        <div class="nav-left">
+            <ul class="category-list">
+                <li class="dropdown">
+                    <a href="#recycled"> Agriculture Waste based Products</a>
+                    <div class="dropdown-content">
+                        <a href="Plantbasedpackaging.html">Plant based packaging</a>
+                        <hr>
+                        <a href="Biodegradable-Tableware.html">Biodegradable Tableware</a>
+                        <hr>
+                        <a href="Agricultural-Fiber-Textiles.html">Agricultural Fiber Textiles</a>
+                        <hr>
+                        <a href="Natural-Fiber-Handicrafts.html">Natural Fiber Handicrafts</a>
+                        <hr>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#biodegradable">CityScape Waste based Products</a>
+                    <div class="dropdown-content">
+                        <a href="UpcyclePalsticCrafts.html">Upcycle Palstic Crafts</a>
+                        <hr>
+                        <a href="GlassBottleVases.html">Upcycled Glass Items</a>
+                        <hr>
+                        <a href="MetalArtSculptures .html">Metal Art Sculptures </a>
+                        <hr>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <input type="text" placeholder="Search products..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <div class="icon-wrapper">
+                <i class="fas fa-heart wishlist-icon"></i>
+                <span class="wishlist-count">0</span>
+            </div>
+            <div class="icon-wrapper">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h3>Glass Bottle Vases</h3>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <div class="product-card"
+            onclick="showProductDetails('Archer hunting','./Metal Art Sculptures/Archer hunting.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 550)">
+            <img src="./Metal Art Sculptures/Archer hunting.jpg" alt="Archer hunting">
+            <h3>Archer hunting</h3>
+            <p class="price">&#8377;550 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Archer hunting')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Archer hunting')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Bird Sculpture','./Metal Art Sculptures/Bird Sculpture.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 589)">
+            <img src="./Metal Art Sculptures/Bird Sculpture.jpg" alt="Bird Sculpture">
+            <h3>Bird Sculpture</h3>
+            <p class="price">&#8377;589 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Bird Sculpture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Bird Sculpture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Bowl Sculpture','./Metal Art Sculptures/Bowl Sculpture.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 358)">
+            <img src="./Metal Art Sculptures/Bowl Sculpture.jpg" alt="Bowl Sculpture">
+            <h3>Bowl Sculpture</h3>
+            <p class="price">&#8377;358 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Bowl Sculpture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Bowl Sculpture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Dog Sculpture','./Metal Art Sculptures/Dog Sculpture.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 450)">
+            <img src="./Metal Art Sculptures/Dog Sculpture.jpg" alt="Dog Sculpture">
+            <h3>Dog Sculpture</h3>
+            <p class="price">&#8377;450 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Dog Sculpture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Dog Sculpture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Doll Sculpture','./Metal Art Sculptures/Doll Sculpture.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 150)">
+            <img src="./Metal Art Sculptures/Doll Sculpture.jpg" alt="Doll Sculpture">
+            <h3>Doll Sculpture</h3>
+            <p class="price">&#8377;696 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Doll Sculpture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Doll Sculpture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('metal-bird-sculpture-wooden-perch','./Metal Art Sculptures/metal-bird-sculpture-wooden-perch.webp','Eco-friendly disposable plates perfect for events and gatherings.', 590)">
+            <img src="./Metal Art Sculptures/metal-bird-sculpture-wooden-perch.webp"
+                alt="metal-bird-sculpture-wooden-perch">
+            <h3>metal-bird-sculpture-wooden-perch</h3>
+            <p class="price">&#8377;590 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'metal-bird-sculpture-wooden-perch')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'metal-bird-sculpture-wooden-perch')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Pin de Volkan metal art','./Metal Art Sculptures/Pin de Volkan metal art.jpeg','Eco-friendly disposable plates perfect for events and gatherings.', 150)">
+            <img src="./Metal Art Sculptures/Pin de Volkan metal art.jpeg" alt="Pin de Volkan metal art">
+            <h3>Pin de Volkan metal art</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Pin de Volkan metal art')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Pin de Volkan metal art')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Rabbit Sclupture','./Metal Art Sculptures/Rabbit Sclupture.jpeg','Eco-friendly disposable plates perfect for events and gatherings.', 150)">
+            <img src="./Metal Art Sculptures/Rabbit Sclupture.jpeg" alt="Rabbit Sclupture">
+            <h3>Rabbit Sclupture</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Rabbit Sclupture')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Rabbit Sclupture')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Table sclupture from heavy metal chains','./Metal Art Sculptures/Table sclupture from heavy metal chains.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 150)">
+            <img src="./Metal Art Sculptures/Table sclupture from heavy metal chains.jpg"
+                alt="Table sclupture from heavy metal chains">
+            <h3>Table sclupture from heavy metal chains</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn"
+                    onclick="addToWishlist(event, 'Table sclupture from heavy metal chains')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Table sclupture from heavy metal chains')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('welded-art-metal-flowers','./Metal Art Sculptures/welded-art-metal-flowers.jpg','Eco-friendly disposable plates perfect for events and gatherings.', 150)">
+            <img src="./Metal Art Sculptures/welded-art-metal-flowers.jpg" alt="welded-art-metal-flowers">
+            <h3>welded-art-metal-flowers</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <p>Eco-friendly disposable plates perfect for events and gatherings.</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'welded-art-metal-flowers')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'welded-art-metal-flowers')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modal-product-img" src="" alt="Product Image">
+            <h2 id="modal-product-name"></h2>
+            <p id="modal-product-description"></p>
+            <p id="modal-product-price" class="price"></p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event)"><i class="fas fa-heart"></i>
+                    Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event)"><i class="fas fa-shopping-cart"></i> Add to
+                    Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buy Now Modal -->
+    <div id="buy-now-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBuyNowModal()">&times;</span>
+            <div id="step1" class="buy-now-step">
+                <h2>Enter Delivery Address</h2>
+                <input type="text" id="address" placeholder="Street" required>
+                <input type="text" id="h.no" placeholder="House.No" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="postal-code" placeholder="Postal Code" required>
+                <button onclick="goToStep(2)">Next</button>
+            </div>
+            <div id="step2" class="buy-now-step" style="display: none;">
+                <h2>Select Payment Method</h2>
+                <input type="radio" id="credit-card" name="payment" value="Credit Card" required>
+                <label for="credit-card">Credit Card</label><br>
+                <input type="radio" id="paypal" name="payment" value="PayPal">
+                <label for="paypal">PayPal</label><br>
+                <input type="radio" id="cash-on-delivery" name="payment" value="Cash on Delivery">
+                <label for="cash-on-delivery">Cash on Delivery</label><br>
+                <button onclick="goToStep(1)">Back</button>
+                <button onclick="goToStep(3)">Next</button>
+            </div>
+            <div id="step3" class="buy-now-step" style="display: none;">
+                <h2>Confirm Order</h2>
+                <div class="order-details">
+                    <p><span class="detail-label">Delivery Address:</span><span class="detail-value"
+                            id="order-address"></span></p>
+                    <p><span class="detail-label">Payment Method:</span><span class="detail-value"
+                            id="order-payment"></span></p>
+                    <p><span class="detail-label">Product:</span><span class="detail-value" id="order-product"></span>
+                    </p>
+                </div>
+                <div class="confirmation-buttons">
+                    <button class="back-btn" onclick="goToStep(2)">Back</button>
+                    <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info and Address -->
+            <div class="footer-section company-info">
+                <h3>EcoFusion Hub</h3>
+                <p>Innovating solutions for a greener future. We transform agricultural and cityscape waste into
+                    valuable products.</p>
+                <p>Address: 25-678 Noonepali Nandyal AndhraPradesh</p>
+                <p>Email: contact@ecofusionhub.com</p>
+                <p>Phone: 8520025329</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/EcoFusionHub" target="_blank"><i class="fab fa-twitter"></i>
+                            Twitter</a></li>
+                    <li><a href="https://www.instagram.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/EcoFusionHub" target="_blank"><i
+                                class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/EcoFusionHub" target="_blank"><i class="fab fa-youtube"></i>
+                            YouTube</a></li>
+                </ul>
+            </div>
+
+            <!-- Latest News & Updates -->
+            <div class="footer-section latest-news">
+                <h3>Latest News & Updates</h3>
+                <ul>
+                    <li>
+                        <a href="news-article-1.html">EcoFusion Hub Launches New Product Line Using 100% Recycled
+                            Materials</a>
+                        <span>November 15, 2024</span>
+                    </li>
+                    <li>
+                        <a href="news-article-2.html">Join Our Upcoming Webinar on Sustainable Practices in Urban
+                            Development</a>
+                        <span>November 25, 2024</span>
+                    </li>
+                    <li>
+                        <a href="news-article-3.html">EcoFusion Hub Partners with Local Farmers for Zero Waste
+                            Initiative</a>
+                        <span>December 2, 2024</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoFusion Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToWishlist(event, productName) {
+            event.stopPropagation();
+            const wishlistCount = document.querySelector('.wishlist-count');
+            wishlistCount.textContent = parseInt(wishlistCount.textContent) + 1;
+            alert(`${productName} added to wishlist!`);
+        }
+
+        function addToCart(event, productName) {
+            event.stopPropagation();
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            alert(`${productName} added to cart!`);
+        }
+
+        // Function to display product details in the modal
+        function showProductDetails(name, img, description, price) {
+            document.getElementById("modal-product-name").textContent = name;
+            document.getElementById("modal-product-img").src = img;
+            document.getElementById("modal-product-description").textContent = description;
+            document.getElementById("modal-product-price").textContent = `Price: ₹${price}`;
+            document.getElementById("product-modal").style.display = "block";
+        }
+
+        // Close modal function
+        function closeModal() {
+            document.getElementById("product-modal").style.display = "none";
+        }
+
+        // Adding items to the cart
+        function addToCart(event) {
+            event.stopPropagation();
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            alert("Product added to cart!");
+            closeModal();
+        }
+
+        // Adding items to the wishlist
+        function addToWishlist(event) {
+            event.stopPropagation();
+            const wishlistCount = document.querySelector('.wishlist-count');
+            wishlistCount.textContent = parseInt(wishlistCount.textContent) + 1;
+            alert("Product added to wishlist!");
+        }
+
+        // Open Buy Now Modal
+        function openBuyNowModal() {
+            document.getElementById("buy-now-modal").style.display = "block";
+            goToStep(1); // Start from step 1
+        }
+
+        // Close Buy Now Modal
+        function closeBuyNowModal() {
+            document.getElementById("buy-now-modal").style.display = "none";
+        }
+
+        // Go to Specific Step in the Modal
+        function goToStep(step) {
+            document.querySelectorAll('.buy-now-step').forEach((element, index) => {
+                element.style.display = (index === step - 1) ? 'block' : 'none';
+            });
+        }
+
+        // Capture Address, Payment, and Product Information
+        function getOrderDetails() {
+            const address = document.getElementById("address").value + ", " + document.getElementById("city").value + ", " + document.getElementById("postal-code").value;
+            const payment = document.querySelector('input[name="payment"]:checked') ? document.querySelector('input[name="payment"]:checked').value : 'Not Selected';
+            const product = "Biodegradable Plates"; // Hardcoded for now, but this can be dynamically assigned based on selected product
+
+            // Display Order Details in Confirmation Step
+            document.getElementById("order-address").textContent = address;
+            document.getElementById("order-payment").textContent = payment;
+            document.getElementById("order-product").textContent = product;
+        }
+
+        // Confirm Order and Show Order Confirmation Message
+        function confirmOrder() {
+            getOrderDetails();
+            alert("Your order has been confirmed! Thank you for shopping with EcoFusion Hub.");
+            closeBuyNowModal();
+        }
+
+        // Close modal if clicked outside content
+        window.onclick = function (event) {
+            const modal = document.getElementById("product-modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

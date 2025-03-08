@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculturai Fibre textiles</title>
+    <link rel="stylesheet" href="z1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div id="title-container">
+                <div id="logo">
+                    <img src="logo1.png " alt="LOGO">
+                </div>
+                <div id="head">
+                    <h1 id="title">EcoFusion Hub</h1>
+                    <p class="center">Innovating solutions for Greener Future</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="about us.html">About us</a></li>
+                    <li class="item"><a href="services.html">Services</a></li>
+                    <li class="item"><a href="products.html">Products</a></li>
+                    <li class="item"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="item"><a href="contact us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Category Navigation Bar -->
+    <nav class="navbar1">
+        <div class="nav-left">
+            <ul class="category-list">
+                <li class="dropdown">
+                    <a href="#recycled"> Agriculture Waste based Products</a>
+                    <div class="dropdown-content">
+                        <a href="Plantbasedpackaging.html">Plant based packaging</a>
+                        <hr>
+                        <a href="Biodegradable-Tableware.html">Biodegradable Tableware</a>
+                        <hr>
+                        <a href="Agricultural-Fiber-Textiles.html">Agricultural Fiber Textiles</a>
+                        <hr>
+                        <a href="Natural-Fiber-Handicrafts.html">Natural Fiber Handicrafts</a>
+                        <hr>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#biodegradable">CityScape Waste based Products</a>
+                    <div class="dropdown-content">
+                        <a href="UpcycledPlasticStorage Bins.html">Upcycled Plastic Storage Bins</a>
+                        <hr>
+                        <a href="GlassBottleVases.html">Glass Bottle Vases</a>
+                        <hr>
+                        <a href="MetalArtSculptures .html">Metal Art Sculptures </a>
+                        <hr>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <input type="text" placeholder="Search products..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <div class="icon-wrapper">
+                <i class="fas fa-heart wishlist-icon"></i>
+                <span class="wishlist-count">0</span>
+            </div>
+            <div class="icon-wrapper">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h3>Agriculturai Fibre textiles</h3>
+    </div>
+
+    <!-- Banana Fiber bags  -->
+    <div class="subheading">
+        <h4>Banana Fiber bags</h4>
+    </div>
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <div class="product-card"
+            onclick="showProductDetails('Classy Ladies Flowers Patterns Crochet','../Agriculturai-Fibre-textiles/Banana Fiber bags/Classy Ladies Flowers Patterns Crochet.jpeg','Elegant crochet bag with flower patterns, perfect for stylish women seeking eco-friendly fashion.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Banana Fiber bags/Classy Ladies Flowers Patterns Crochet.jpeg"
+                alt="Classy Ladies Flowers Patterns Crochet">
+            <h3>Classy Ladies Flowers Patterns Crochet</h3>
+            <p class="price">&#8377;320 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Classy Ladies Flowers Patterns Crochet')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Classy Ladies Flowers Patterns Crochet')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Elegant Corchet Work bags','../Agriculturai-Fibre-textiles/Banana Fiber bags/Elegant Corchet Work bags.jpg','Charming crochet work bag, an ideal eco-friendly fashion accessory for women.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Banana Fiber bags/Elegant Corchet Work bags.jpg"
+                alt="Elegant Corchet Work bags">
+            <h3>Elegant Corchet Work bags</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Elegant Corchet Work bags')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Elegant Corchet Work bags')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Handmade Banana fiber Grocery bag','../Agriculturai-Fibre-textiles/Banana Fiber bags/Handmade Banana fiber Grocery bag.jpeg','Durable and eco-friendly handmade banana fiber grocery bag, perfect for sustainable shopping.', 185)">
+            <img src="./Agriculturai-Fibre-textiles/Banana Fiber bags/Handmade Banana fiber Grocery bag.jpeg"
+                alt="Handmade Banana fiber Grocery bag">
+            <h3>Handmade Banana fiber Grocery bag</h3>
+            <p class="price">&#8377;185 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Handmade Banana fiber Grocery bag')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Handmade Banana fiber Grocery bag')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Smooth White plain bag','../Agriculturai-Fibre-textiles/Banana Fiber bags/Smooth White plain bag.jpeg','Simple and elegant smooth white banana fiber bag, perfect for casual and eco-conscious wear.', 150)">
+            <img src="./Agriculturai-Fibre-textiles/Banana Fiber bags/Smooth White plain bag.jpeg"
+                alt="Smooth White plain bag">
+            <h3>Smooth White plain bag</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Smooth White plain bag')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Smooth White plain bag')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bamboo Fiber Towels  -->
+    <div class="subheading">
+        <h4>Bamboo Fiber Towels</h4>
+    </div>
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <div class="product-card"
+            onclick="showProductDetails('Atra-Bamboo-Hand-Towel-Big','./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Atra-Bamboo-Hand-Towel-Big.jpg','Soft and absorbent bamboo hand towel, perfect for daily use with eco-friendly benefits.', 149)">
+            <img src="./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Atra-Bamboo-Hand-Towel-Big.jpg"
+                alt="Atra-Bamboo-Hand-Towel-Big">
+            <h3>Atra-Bamboo-Hand-Towel-Big</h3>
+            <p class="price">&#8377;149 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Atra-Bamboo-Hand-Towel-Big')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Atra-Bamboo-Hand-Towel-Big')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Bamboo-Fiber-Towels-Purple-Gray-Brown-Bath-Face-Towel','./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Bamboo-Fiber-Towels-Purple-Gray-Brown.webp','Soft bamboo fiber bath and face towel in a stylish purple-gray-brown color, perfect for any bathroom.', 150)">
+            <img src="./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Bamboo-Fiber-Towels-Purple-Gray-Brown.webp"
+                alt="Bamboo-Fiber-Towels-Purple-Gray-Brown-Bath-Face-Towel">
+            <h3>Bamboo Fiber Towels Purple Gray Brown Bath Face Towel</h3>
+            <p class="price">&#8377;150 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn"
+                    onclick="addToWishlist(event, 'Bamboo-Fiber-Towels-Purple-Gray-Brown-Bath-Face-Towel')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn"
+                    onclick="addToCart(event, 'Bamboo-Fiber-Towels-Purple-Gray-Brown-Bath-Face-Towel')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Super soft Hand towel set of 3','./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Super soft Hand towel set of 3.jpeg','Super soft and highly absorbent bamboo hand towel set of 3, ideal for everyday use.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Super soft Hand towel set of 3.jpeg"
+                alt="Super soft Hand towel set of 3">
+            <h3>Super soft Hand towel set of 3</h3>
+            <p class="price">&#8377;50 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Super soft Hand towel set of 3')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Super soft Hand towel set of 3')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Soft Water Baby Towel,small size','./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Soft Water Baby Towel,small size.jpg','Gentle and soft bamboo fiber baby towel, perfect for delicate skin with superior absorbency.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Bamboo Fiber Towels/Soft Water Baby Towel,small size.jpg"
+                alt="Soft Water Baby Towel,small size">
+            <h3>Soft Water Baby Towel,small size</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Soft Water Baby Towel,small size')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Soft Water Baby Towel,small size')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hemp fabric clothing  -->
+    <div class="subheading">
+        <h4>Hemp fabric clothing</h4>
+    </div>
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <div class="product-card"
+            onclick="showProductDetails('Emp Crop top for women','./Agriculturai-Fibre-textiles/Hemp fabric clothing/emp Crop top for women.webp','Stylish and comfortable hemp crop top for women, perfect for casual wear with an eco-friendly touch.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Hemp fabric clothing/emp Crop top for women.webp"
+                alt="Emp Crop top for women">
+            <h3>Emp Crop top for women</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Emp Crop top for women')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Emp Crop top for women')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Hemp jacket','./Agriculturai-Fibre-textiles/Hemp fabric clothing/Hemp jacket.avif','A versatile and sustainable hemp jacket, perfect for cool weather and eco-conscious fashion.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Hemp fabric clothing/Hemp jacket.avif" alt="Hemp jacket">
+            <h3>Hemp jacket</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Hemp jacket')"><i class="fas fa-heart"></i>
+                    Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Hemp jacket')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Hemp shirt for men','./Agriculturai-Fibre-textiles/Hemp fabric clothing/Hemp shirt for men.avif','Comfortable and breathable hemp shirt for men, ideal for a sustainable wardrobe.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Hemp fabric clothing/Hemp shirt for men.avif"
+                alt="Hemp shirt for men">
+            <h3>Hemp shirt for men</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Hemp shirt for men')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Hemp shirt for men')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Knitted Hemp Shirt','./Agriculturai-Fibre-textiles/Hemp fabric clothing/Knitted Hemp Shirt.avif','Stylish knitted hemp shirt, offering a blend of comfort and sustainability for everyday wear.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Hemp fabric clothing/Knitted Hemp Shirt.avif"
+                alt="Knitted Hemp Shirt">
+            <h3>Knitted Hemp Shirt</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Knitted Hemp Shirt')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Knitted Hemp Shirt')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pineapple leather for shoes  -->
+    <div class="subheading">
+        <h4>Pineapple leather for shoes</h4>
+    </div>
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <div class="product-card"
+            onclick="showProductDetails('Fashionably Vegan Pineapple leather shoes','./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Fashionably Vegan Pineapple leather shoes.jpeg','Fashionably vegan pineapple leather shoes, offering a stylish and eco-friendly alternative to traditional leather.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Fashionably Vegan Pineapple leather shoes.jpeg"
+                alt="Fashionably Vegan Pineapple leather shoes">
+            <h3>Fashionably Vegan Pineapple leather shoes</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn"
+                    onclick="addToWishlist(event, 'Fashionably Vegan Pineapple leather shoes')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn"
+                    onclick="addToCart(event, 'Fashionably Vegan Pineapple leather shoes')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Neatorma shoes','./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Neatorma shoes.jpeg','Stylish and durable pineapple leather shoes from Neatorma, offering a sustainable and fashionable footwear choice.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Neatorma shoes.jpeg"
+                alt="Neatorma shoes">
+            <h3>Neatorma shoes</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Neatorma shoes')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Neatorma shoes')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Nike shoes made by pineapple leather','./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Nike shoes made by pineapple leather.jpg','Nike shoes crafted from pineapple leather, a sustainable alternative to traditional materials, blending style and eco-conscious design.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Nike shoes made by pineapple leather.jpg"
+                alt="Nike shoes made by pineapple leather">
+            <h3>Nike shoes made by pineapple leather</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Nike shoes made by pineapple leather')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Nike shoes made by pineapple leather')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card"
+            onclick="showProductDetails('Sneakers are made from Pineapples','./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Sneakers are made from Pineapples.jpeg','Sneakers made from pineapples, offering a sustainable and stylish option for eco-conscious fashion lovers.', 250)">
+            <img src="./Agriculturai-Fibre-textiles/Pineapple leather for shoes/Sneakers are made from Pineapples.jpeg"
+                alt="Sneakers are made from Pineapples">
+            <h3>Sneakers are made from Pineapples</h3>
+            <p class="price">&#8377;250 per piece</p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event, 'Sneakers are made from Pineapples')"><i
+                        class="fas fa-heart"></i> Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event, 'Sneakers are made from Pineapples')"><i
+                        class="fas fa-shopping-cart"></i> Add to Cart</button>
+                <button class="buy-now-btn" onclick="openBuyNowModal()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modal-product-img" src="" alt="Product Image">
+            <h2 id="modal-product-name"></h2>
+            <p id="modal-product-description"></p>
+            <p id="modal-product-price" class="price"></p>
+            <div class="product-actions">
+                <button class="wishlist-btn" onclick="addToWishlist(event)"><i class="fas fa-heart"></i>
+                    Wishlist</button>
+                <button class="add-to-cart-btn" onclick="addToCart(event)"><i class="fas fa-shopping-cart"></i> Add to
+                    Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buy Now Modal -->
+    <div id="buy-now-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBuyNowModal()">&times;</span>
+            <div id="step1" class="buy-now-step">
+                <h2>Enter Delivery Address</h2>
+                <input type="text" id="address" placeholder="Street" required>
+                <input type="text" id="h.no" placeholder="House.No" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="postal-code" placeholder="Postal Code" required>
+                <button onclick="goToStep(2)">Next</button>
+            </div>
+            <div id="step2" class="buy-now-step" style="display: none;">
+                <h2>Select Payment Method</h2>
+                <input type="radio" id="credit-card" name="payment" value="Credit Card" required>
+                <label for="credit-card">Credit Card</label><br>
+                <input type="radio" id="paypal" name="payment" value="PayPal">
+                <label for="paypal">PayPal</label><br>
+                <input type="radio" id="cash-on-delivery" name="payment" value="Cash on Delivery">
+                <label for="cash-on-delivery">Cash on Delivery</label><br>
+                <button onclick="goToStep(1)">Back</button>
+                <button onclick="goToStep(3)">Next</button>
+            </div>
+            <div id="step3" class="buy-now-step" style="display: none;">
+                <h2>Confirm Order</h2>
+                <div class="order-details">
+                    <p><span class="detail-label">Delivery Address:</span><span class="detail-value"
+                            id="order-address"></span></p>
+                    <p><span class="detail-label">Payment Method:</span><span class="detail-value"
+                            id="order-payment"></span></p>
+                    <p><span class="detail-label">Product:</span><span class="detail-value" id="order-product"></span>
+                    </p>
+                </div>
+                <div class="confirmation-buttons">
+                    <button class="back-btn" onclick="goToStep(2)">Back</button>
+                    <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info and Address -->
+            <div class="footer-section company-info">
+                <h3>EcoFusion Hub</h3>
+                <p>Innovating solutions for a greener future. We transform agricultural and cityscape waste into
+                    valuable products.</p>
+                <p>Address: 25-678 Noonepali Nandyal AndhraPradesh</p>
+                <p>Email: contact@ecofusionhub.com</p>
+                <p>Phone: 8520025329</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+                    <li><i class="fas fa-info-circle"></i><a href="about us.html">About Us</a></li>
+                    <li><i class="fas fa-cogs"></i><a href="services.html">Services</a></li>
+                    <li><i class="fas fa-box-open"></i><a href="products.html">Products</a></li>
+                    <li><i class="fas fa-phone"></i><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section services1">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><i class="fas fa-recycle"></i> Agricultural Waste Repurposing</li>
+                    <li><i class="fas fa-building"></i> Cityscape Waste Recycling</li>
+                    <li><i class="fas fa-hands-helping"></i> Partnerships with Innovators</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Educational Workshops</li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-section products">
+                <h3>Our Products</h3>
+                <ul>
+                    <li><i class="fas fa-box"></i> Plant-Based Packaging</li>
+                    <li><i class="fas fa-utensils"></i> Biodegradable Tableware</li>
+                    <li><i class="fas fa-tshirt"></i> Agricultural Fiber Textiles</li>
+                    <li><i class="fas fa-leaf"></i> Natural Fiber Handicrafts</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/EcoFusionHub" target="_blank"><i class="fab fa-twitter"></i>
+                            Twitter</a></li>
+                    <li><a href="https://www.instagram.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/EcoFusionHub" target="_blank"><i
+                                class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/EcoFusionHub" target="_blank"><i class="fab fa-youtube"></i>
+                            YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoFusion Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToWishlist(event, productName) {
+            event.stopPropagation();
+            const wishlistCount = document.querySelector('.wishlist-count');
+            wishlistCount.textContent = parseInt(wishlistCount.textContent) + 1;
+            alert(`${productName} added to wishlist!`);
+        }
+
+        function addToCart(event, productName) {
+            event.stopPropagation();
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            alert(`${productName} added to cart!`);
+        }
+
+        // Function to display product details in the modal
+        function showProductDetails(name, img, description, price) {
+            document.getElementById("modal-product-name").textContent = name;
+            document.getElementById("modal-product-img").src = img;
+            document.getElementById("modal-product-description").textContent = description;
+            document.getElementById("modal-product-price").textContent = `Price: ₹${price}`;
+            document.getElementById("product-modal").style.display = "block";
+        }
+
+        // Close modal function
+        function closeModal() {
+            document.getElementById("product-modal").style.display = "none";
+        }
+
+        // Adding items to the cart
+        function addToCart(event) {
+            event.stopPropagation();
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
+            alert("Product added to cart!");
+            closeModal();
+        }
+
+        // Adding items to the wishlist
+        function addToWishlist(event) {
+            event.stopPropagation();
+            const wishlistCount = document.querySelector('.wishlist-count');
+            wishlistCount.textContent = parseInt(wishlistCount.textContent) + 1;
+            alert("Product added to wishlist!");
+        }
+
+        // Open Buy Now Modal
+        function openBuyNowModal() {
+            document.getElementById("buy-now-modal").style.display = "block";
+            goToStep(1); // Start from step 1
+        }
+
+        // Close Buy Now Modal
+        function closeBuyNowModal() {
+            document.getElementById("buy-now-modal").style.display = "none";
+        }
+
+        // Go to Specific Step in the Modal
+        function goToStep(step) {
+            document.querySelectorAll('.buy-now-step').forEach((element, index) => {
+                element.style.display = (index === step - 1) ? 'block' : 'none';
+            });
+        }
+
+        // Capture Address, Payment, and Product Information
+        function getOrderDetails() {
+            const address = document.getElementById("address").value + ", " + document.getElementById("city").value + ", " + document.getElementById("postal-code").value;
+            const payment = document.querySelector('input[name="payment"]:checked') ? document.querySelector('input[name="payment"]:checked').value : 'Not Selected';
+            const product = "Biodegradable Plates"; // Hardcoded for now, but this can be dynamically assigned based on selected product
+
+            // Display Order Details in Confirmation Step
+            document.getElementById("order-address").textContent = address;
+            document.getElementById("order-payment").textContent = payment;
+            document.getElementById("order-product").textContent = product;
+        }
+
+        // Confirm Order and Show Order Confirmation Message
+        function confirmOrder() {
+            getOrderDetails();
+            alert("Your order has been confirmed! Thank you for shopping with EcoFusion Hub.");
+            closeBuyNowModal();
+        }
+
+        // Close modal if clicked outside content
+        window.onclick = function (event) {
+            const modal = document.getElementById("product-modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

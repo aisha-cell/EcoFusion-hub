@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - EcoFusion Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header">
+      <div id="title-container">
+        <div id="logo">
+          <img src="logo1.png" alt="LOGO">
+        </div>
+        <div id="head">
+          <h1 id="title">EcoFusion Hub</h1>
+          <p class="center">Innovating solutions for Greener Future</p>
+        </div>
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="about us.html">About us</a></li>
+          <li class="item"><a href="services.html">Services</a></li>
+          <li class="item"><a href="products.html">Products</a></li>
+          <li class="item"><a href="dashboard.html">Dashboard</a></li>
+          <li class="item"><a href="contact us.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <div class="container">
+    <div class="sidebar">
+      <h2>EcoFusion Hub</h2>
+      <button onclick="showSection('farmer-dashboard')">Farmer</button>
+      <button onclick="showSection('manufacturer-dashboard')">Manufacturer</button>
+      <button onclick="showSection('consumer-dashboard')">Consumer</button>
+      <button onclick="showSection('innovator-dashboard')">Innovator</button>
+    </div>
+
+    <div class="content">
+
+      <section class="welcome-section">
+        <h2>Welcome to the EcoFusion Hub Dashboard</h2>
+        <p>EcoFusion Hub is your one-stop platform for sustainable solutions. Whether you're a farmer, manufacturer,
+          consumer, or innovator, we offer tools and resources tailored to your needs. Select a category from the left
+          to begin.</p>
+      </section>
+
+      <!-- Farmer Dashboard -->
+      <section class="form-section" id="farmer-dashboard" style="display: none;">
+        <h2>Farmer Dashboard</h2>
+
+        <!-- Basic Information Form -->
+        <form>
+          <h3>Basic Information</h3>
+          <label for="farmer-name">Name:</label>
+          <input type="text" id="farmer-name" name="farmer-name">
+          <label for="farmer-location">Location:</label>
+          <input type="text" id="farmer-location" name="farmer-location">
+          <label for="farmer-contact">Contact Number:</label>
+          <input type="text" id="farmer-contact" name="farmer-contact">
+          <label for="farmer-email">Email:</label>
+          <input type="email" id="farmer-email" name="farmer-email">
+          <label for="farmer-farm-type">Farm Type (e.g., Organic, Conventional):</label>
+          <input type="text" id="farmer-farm-type" name="farmer-farm-type">
+          <label for="farmer-certifications">Certifications (e.g., Organic, GAP):</label>
+          <input type="text" id="farmer-certifications" name="farmer-certifications">
+        </form>
+
+        <!-- Product Listing Form -->
+        <form>
+          <h3>Product Listing</h3>
+          <label for="product-name">Product Name:</label>
+          <input type="text" id="product-name" name="product-name">
+          <label for="product-type">Product Type (e.g., Vegetables, Fruits):</label>
+          <input type="text" id="product-type" name="product-type">
+          <label for="product-description">Description:</label>
+          <textarea id="product-description" name="product-description"></textarea>
+          <label for="product-price">Price (per kg/unit):</label>
+          <input type="number" id="product-price" name="product-price">
+          <label for="product-availability">Availability (Quantity):</label>
+          <input type="number" id="product-availability" name="product-availability">
+          <label for="harvest-date">Harvest Date:</label>
+          <input type="date" id="harvest-date" name="harvest-date">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Manufacturer Dashboard -->
+      <section class="form-section" id="manufacturer-dashboard" style="display: none;">
+        <h2>Manufacturer Dashboard</h2>
+
+        <!-- Company Information Form -->
+        <form>
+          <h3>Company Information</h3>
+          <label for="manufacturer-name">Company Name:</label>
+          <input type="text" id="manufacturer-name" name="manufacturer-name">
+          <label for="manufacturer-location">Location:</label>
+          <input type="text" id="manufacturer-location" name="manufacturer-location">
+          <label for="manufacturer-contact">Contact Number:</label>
+          <input type="text" id="manufacturer-contact" name="manufacturer-contact">
+          <label for="manufacturer-email">Email:</label>
+          <input type="email" id="manufacturer-email" name="manufacturer-email">
+          <label for="manufacturer-registration">Registration Number:</label>
+          <input type="text" id="manufacturer-registration" name="manufacturer-registration">
+          <label for="manufacturer-industry">Industry Type (e.g., Food Processing, Textiles):</label>
+          <input type="text" id="manufacturer-industry" name="manufacturer-industry">
+        </form>
+
+        <!-- Purchase Order Form -->
+        <form>
+          <h3>Purchase Order</h3>
+          <label for="order-id">Order ID:</label>
+          <input type="text" id="order-id" name="order-id">
+          <label for="order-details">Order Details:</label>
+          <textarea id="order-details" name="order-details"></textarea>
+          <label for="quantity">Quantity (in units/kg):</label>
+          <input type="number" id="quantity" name="quantity">
+          <label for="expected-delivery">Expected Delivery Date:</label>
+          <input type="date" id="expected-delivery" name="expected-delivery">
+          <label for="delivery-status">Delivery Status:</label>
+          <select id="delivery-status" name="delivery-status">
+            <option value="pending">Pending</option>
+            <option value="in-transit">In Transit</option>
+            <option value="delivered">Delivered</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Consumer Dashboard -->
+      <section class="form-section" id="consumer-dashboard" style="display: none;">
+        <h2>Consumer Dashboard</h2>
+
+        <!-- Profile Information Form -->
+        <form>
+          <h3>Profile Information</h3>
+          <label for="consumer-name">Name:</label>
+          <input type="text" id="consumer-name" name="consumer-name">
+          <label for="consumer-email">Email:</label>
+          <input type="email" id="consumer-email" name="consumer-email">
+          <label for="consumer-phone">Phone Number:</label>
+          <input type="text" id="consumer-phone" name="consumer-phone">
+          <label for="consumer-address">Address:</label>
+          <input type="text" id="consumer-address" name="consumer-address">
+          <label for="consumer-preferences">Preferences (e.g., Organic, Vegan):</label>
+          <input type="text" id="consumer-preferences" name="consumer-preferences">
+        </form>
+
+        <!-- Order History Form -->
+        <form>
+          <h3>Order History</h3>
+          <label for="order-history">Order Details:</label>
+          <textarea id="order-history" name="order-history"></textarea>
+          <label for="order-id-history">Order ID:</label>
+          <input type="text" id="order-id-history" name="order-id-history">
+          <label for="order-date-history">Order Date:</label>
+          <input type="date" id="order-date-history" name="order-date-history">
+          <label for="order-status-history">Order Status:</label>
+          <input type="text" id="order-status-history" name="order-status-history">
+          <button type="submit">Submit </button>
+        </form>
+      </section>
+
+      <!-- Innovator Dashboard -->
+      <section class="form-section" id="innovator-dashboard" style="display: none;">
+        <h2>Innovator Dashboard</h2>
+
+        <!-- Company Profile Form -->
+        <form>
+          <h3>Company Profile</h3>
+          <label for="innovator-company-name">Company Name:</label>
+          <input type="text" id="innovator-company-name" name="innovator-company-name">
+          <label for="innovator-location">Location:</label>
+          <input type="text" id="innovator-location" name="innovator-location">
+          <label for="innovator-focus">Focus Area (e.g., Sustainable Products):</label>
+          <textarea id="innovator-focus" name="innovator-focus"></textarea>
+          <label for="innovator-contact">Contact Number:</label>
+          <input type="text" id="innovator-contact" name="innovator-contact">
+          <label for="innovator-email">Email:</label>
+          <input type="email" id="innovator-email" name="innovator-email">
+        </form>
+
+        <!-- Project Collaboration Form -->
+        <form>
+          <h3>Project Collaboration</h3>
+          <label for="project-name">Project Name:</label>
+          <input type="text" id="project-name" name="project-name">
+          <label for="project-description">Description:</label>
+          <textarea id="project-description" name="project-description"></textarea>
+          <label for="project-duration">Duration (in months):</label>
+          <input type="number" id="project-duration" name="project-duration">
+          <label for="collaborators">Collaborators:</label>
+          <input type="text" id="collaborators" name="collaborators">
+          <label for="collaboration-status">Status:</label>
+          <select id="collaboration-status" name="collaboration-status">
+            <option value="ongoing">Ongoing</option>
+            <option value="completed">Completed</option>
+            <option value="proposed">Proposed</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.form-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+            <!-- Company Info and Address -->
+            <div class="footer-section company-info">
+                <h3>EcoFusion Hub</h3>
+                <p>Innovating solutions for a greener future. We transform agricultural and cityscape waste into
+                    valuable products.</p>
+                <p>Address: 25-678 Noonepali Nandyal AndhraPradesh</p>
+                <p>Email: contact@ecofusionhub.com</p>
+                <p>Phone: 8520025329</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/EcoFusionHub" target="_blank"><i class="fab fa-twitter"></i>
+                            Twitter</a></li>
+                    <li><a href="https://www.instagram.com/EcoFusionHub" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/EcoFusionHub" target="_blank"><i
+                                class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/EcoFusionHub" target="_blank"><i class="fab fa-youtube"></i>
+                            YouTube</a></li>
+                </ul>
+            </div>
+
+            <!-- Latest News & Updates -->
+            <div class="footer-section latest-news">
+                <h3>Latest News & Updates</h3>
+                <ul>
+                    <li>
+                        <a href="news-article-1.html">EcoFusion Hub Launches New Product Line Using 100% Recycled
+                            Materials</a>
+                        <span>November 15, 2024</span>
+                    </li>
+                    <li>
+                        <a href="news-article-2.html">Join Our Upcoming Webinar on Sustainable Practices in Urban
+                            Development</a>
+                        <span>November 25, 2024</span>
+                    </li>
+                    <li>
+                        <a href="news-article-3.html">EcoFusion Hub Partners with Local Farmers for Zero Waste
+                            Initiative</a>
+                        <span>December 2, 2024</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoFusion Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
